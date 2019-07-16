@@ -99,9 +99,11 @@ section{ /* Makes all section inline-block */
 header {
 	height: 100px;
 	width: 100%;
-	/*display: inline-block;*/
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 	position: fixed;
-	padding-top: 22px;
 	text-align: center;
 	background-color: #daf7e8;
 }
