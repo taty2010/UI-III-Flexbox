@@ -76,9 +76,13 @@ h1{
 	text-align: center;
 }
 
+h2{
+	font-size: 30px;
+}
+
 h3{
 	font-size: 18px;
-	font-family: 'Russo One', sans-serif;
+
 }
 
 p{
@@ -86,11 +90,11 @@ p{
 }
 
 figure {
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 section{ /* Makes all section inline-block */
-	display: inline-block;
+	/*display: inline-block;*/
 	/*width: 50%*/
 }
 
@@ -100,17 +104,17 @@ header {
 	height: 100px;
 	width: 100%;
 	display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-	position: fixed;
+  	align-items: center;
+  	justify-content: center;
+  	align-content: center;
+	/*position: fixed;*/
 	text-align: center;
-	background-color: #daf7e8;
+	/*background-color: #daf7e8;*/
 }
 
-nav {
+/*nav {
 	display: inline-block;
-}
+}*/
 
 nav a {
 	font-size: 18px;
@@ -136,9 +140,15 @@ header figure {
 #hero {
 	text-align: center;
 	width: 90%;
-	margin: 65px 0;
+	height: 600px;
+	margin: 0 auto;
 	border-bottom: 1px solid gray;
-	padding: 65px 0 50px 0;
+	display: flex;
+    flex-flow: row wrap;
+	align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 65px;
 }
 
 #hero figure {
@@ -164,43 +174,58 @@ header figure {
 
 main {
 	width: 100%;
-	display: inline-block;
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 35px;
 }
 
 main article{
 	font-size: 12px;
 	/*width:29.5%;*/
-	display: inline-block;
 	text-align: left;
 	margin: 20px 10px;
-	padding: 0 30px;
+	/*padding: 0 30px;*/
 }
 
 main section{
 	width: 90%;
 }
 
-#middle-image{
-	background-image: url(../img/mid-page-accent.jpg);
-	background-position: center;
-  background-repeat: no-repeat;
-  width: 890px;
-  height: 189px;
-}
-
-#last-section{
-	border-bottom: 1px solid gray;
-}
-
-#last-section article{
-	width:27.5%;
-	margin: 50px 0;
+#first-section{
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #first-section article{
 	width:40%;
 	margin-bottom: 30px;
 }
+
+#middle-image{
+	background-image: url(../img/mid-page-accent.jpg);
+	background-position: center;
+  	background-repeat: no-repeat;
+  	width: 890px;
+  	height: 189px;
+}
+
+#last-section{
+	border-bottom: 1px solid gray;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+#last-section article{
+	width:30%;
+	margin: 50px 0;
+	padding: 0 10px;
+}
+
 
 #features{
 	padding-right: 5px;
@@ -214,7 +239,7 @@ footer{
 
 #contact-info{
 	text-align: left;
-	margin: bottom: 40px;
+	margin-bottom: 40px;
 }
 
 address{
@@ -225,7 +250,107 @@ address{
 	margin-top: 20px;
 }
 
-#copyright {
+.copyright {
 	text-align: center;
 	margin-top: 50px;
+}
+
+/** SERVICES PAGE **/
+
+#hero-services{
+	display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-around;
+    text-align: left;
+    width: 83%;
+    height: 400px;
+	padding-bottom: 50px;
+    margin: 0 auto;
+	border-bottom: 1px solid gray;
+	margin-bottom: 30px;
+}
+
+.services-hero-section{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.services-hero-section figure {
+	margin-bottom: 30px;
+}
+
+.services-hero-section article {
+	width: 890px;
+}
+.services-hero-section p, .services-articles p {
+	line-height: 20px;
+}
+
+/** MAIN AREA **/
+
+#main-services {
+	flex-flow: row wrap;
+	border-bottom: 1px solid gray;
+	width: 83%;
+	margin: 0 auto;
+}
+
+.services-articles {
+	width: 46%;
+	height: 230px;
+	border: 1px solid gray;
+	padding: 15px;
+	margin: 0 15px 20px 15px;
+	background-color: #f5f5f5;
+}
+
+.services-articles p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.services-articles a{
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: white;
+	text-decoration: none;
+	color: #000000;
+	font-weight: 600;
+	padding: 5px 30px;
+	margin-top: 30px;
+}
+
+/** FOOTER **/
+
+#end-services {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+#services-facts {
+	text-align: left;
+	width: 45%;
+}
+
+ul{
+	margin: 30px 0 0 23px;
+}
+
+ul li {
+	list-style:disc;
+	line-height: 25px;
+}
+
+#end-services figure {
+	width: 40%;
+	margin-left: 25px;
 }
