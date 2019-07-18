@@ -376,3 +376,25 @@ figure h1 {
 	top: 50%;
 	left: 38%;
 }
+
+#about-paragraph{
+	width: 95%;
+	display: flex;
+	border: 1px solid lightgray;
+}
+
+#about-paragraph p{
+	line-height: 25px;
+}
+
+
+#main-about-img{
+	background-image: url(../img/workspace.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 95%;
+	height: 300px;
+	margin-top: 40px;
+}
