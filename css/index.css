@@ -207,7 +207,7 @@ main section{
 
 #first-section{
    display: flex;
-   flex-flow: column wrap;
+   flex-flow: row wrap;
    justify-content: center;
    align-items: center;
    height: 350px;
@@ -545,6 +545,29 @@ figure h1 {
 		Margin: 25px auto;
 		height: 550px;
 	}
+
+	/* SERVICES*/
+
+	#hero-services img{
+		width: 100%;
+	}
+
+	.services-hero-section article {
+		width: auto;
+	}
+
+	#main-services {
+		width: auto;
+	}
+
+	.services-articles{
+		height: 250px;
+	}
+
+	.services-info-img{
+		width: 100%;
+	}
+	
 }
 
 
