@@ -207,6 +207,7 @@ main section{
 
 #first-section{
    display: flex;
+   flex-flow: column wrap;
    justify-content: center;
    align-items: center;
    height: 350px;
@@ -253,7 +254,7 @@ footer{
 }
 
 #contact-info{
-	text-align: center;
+	text-align: center ;
 	margin-bottom: 40px;
 }
 
@@ -431,7 +432,7 @@ figure h1 {
 @media screen and (max-width: 850px){
 
 	html, body{
-		width: 90%;
+		width: 100%;
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -459,7 +460,7 @@ figure h1 {
 
 	header {
 		height: auto;
-		width: 90%;
+		width: 100%;
 		display: flex;
 		flex-flow: column-reverse;
 	  	align-items: center;
@@ -468,6 +469,7 @@ figure h1 {
 		text-align: center;
 		position: fixed;
 		background: white;
+		padding-right: 20px;
 		/*margin: 20px auto;*/
 	}
 
@@ -481,14 +483,14 @@ figure h1 {
 
 	nav a {
 		font-size: 16px;
-		padding: 20px;
+		padding: 15px;
 	}
 
 	/**** HERO ****/
 
 	#hero{
 		flex-flow: column-reverse;
-		height: auto;
+		height: 400px;
     	padding: 70px 0 30px 0;
 	}
 
@@ -501,17 +503,19 @@ figure h1 {
     background-position: center;
     width: 100%;
     margin: 50px auto 0;
-	height: 350px;
 	}
 
 	.hero-section{
 		margin-top: 25px;
 	}
 
-	/**** MAIN ****//
+	/**** MAIN ****/
+
+	main section {
+		width: 80%;
+	}
 
 	#first-section{
-		flex-flow: column nowrap;
 		width: 75%;
 	}
 
@@ -525,17 +529,21 @@ figure h1 {
 
 	#middle-image {
 		width: 90%;
-    	height: 150px;
-    	margin: 0 auto;
+		margin: 0 auto;
+		background-size: contain;
+		height:220px;
+		margin-bottom: 45px;
 	}
 
 	#last-section {
 		flex-flow: column nowrap;
+		padding-bottom: 35px;
 	}
 
 	#last-section article {
 		width: 90%;
 		Margin: 25px auto;
+		height: 550px;
 	}
 }
 
