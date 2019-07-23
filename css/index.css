@@ -378,7 +378,7 @@ ul li {
 }
 
 #about-hero  figure{
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -398,18 +398,21 @@ figure h1 {
 	text-align: center;
 	position: absolute;
 	color: white;
-	top: 50%;
+	top: 35%;
 	left: 38%;
 }
 
 #about-paragraph{
-	width: 95%;
+	width: 100%;
 	display: flex;
+	flex-flow: column nowrap;
 	border: 1px solid lightgray;
 }
 
 #about-paragraph article {
-	width: 50%;
+	width: 90%;
+	padding: 35px 30px;
+	margin: 0 auto;
 }
 
 #about-paragraph p{
@@ -566,6 +569,29 @@ figure h1 {
 
 	.services-info-img{
 		width: 100%;
+	}
+
+	/*** About US ***/
+
+	#about-hero figure {
+		width: 80;
+	}
+
+	#about-header-image{
+		height: 350px;
+	}
+
+	#about-hero h1{
+		top: 25%;
+		left: 35%;
+	}
+
+	#about-paragraph {
+		border: none;
+	}
+
+	#main-about-img{
+		height: 200px;
 	}
 	
 }
