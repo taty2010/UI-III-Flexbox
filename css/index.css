@@ -110,13 +110,10 @@ header {
 	/*background-color: #daf7e8;*/
 }
 
-/*nav {
-	display: inline-block;
-}*/
 
 nav a {
 	font-size: 18px;
-	padding: 30px;
+	padding: 25px;
 	text-decoration: none;
 	color: #000000;
 }
@@ -432,7 +429,91 @@ figure h1 {
 }
 
 
-@media screen and (max-width: 850px){
+/**** SCREEN SIZES****/
+@media only screen and (max-width: 500px){ /*** MOBILE ***/
+
+	h1{
+		font-size: 70px;
+	}
+
+	header {
+		height: 120px;
+		display: flex;
+		flex-flow: column-reverse;
+	}
+
+	nav{
+		display: flex;
+		flex-direction: row;
+		padding-top: 25px;
+	}
+
+	nav a {
+		font-size: 14px;
+		padding: 0 7px;
+	}
+
+	header figure {
+		margin: 0;
+	}
+
+	#hero {
+		background-attachment: initial;
+		height: 500px;
+		width: 95%;
+	}
+
+	#middle-image{
+		display: none;
+	}
+
+	#first-section, #last-section{
+		flex-flow: column nowrap;
+		height: auto;
+		align-content: center;
+		width: 95%;
+		border-left: 1px solid lightgray;
+    	border-right: 1px solid lightgrey
+	}
+
+	#first-section article, #last-section article{
+		width: 100%;
+		padding: 0 25px;
+		text-align: left;
+	}
+
+	footer {
+		margin: 50px 0 60px 0;
+	}
+
+	/*** ABOUT ***/
+
+	#about-hero{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	#about-header-image{
+		height: 400px;
+		background-attachment: initial;
+	}
+
+	#about-hero h1{
+		left: 14%;
+		height: auto;
+	}
+
+	#about-paragraph{
+		border: none;
+	}
+
+	#main-about-img{
+		background-attachment: initial;
+		height: 200px
+	}
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px){ /*** TABLET ***/
 
 	html, body{
 		width: 100%;
@@ -442,7 +523,7 @@ figure h1 {
 
 	h1{
 		height: auto;
-		font-size: 40px;
+		font-size: 70px;
 		text-align: center;
 	}
 
@@ -494,6 +575,7 @@ figure h1 {
 	#hero{
 		flex-flow: column-reverse;
 		height: 400px;
+		width: 95%;
     	padding: 70px 0 30px 0;
 	}
 
