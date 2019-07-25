@@ -432,12 +432,18 @@ figure h1 {
 /**** SCREEN SIZES****/
 @media only screen and (max-width: 500px){ /*** MOBILE ***/
 
+	body{
+		background-color: rgb(31, 31, 31);
+	}
+
 	h1{
 		font-size: 70px;
 	}
 
 	header {
+		width: 95%;
 		height: 120px;
+		margin-left: 2.5%;
 		display: flex;
 		flex-flow: column-reverse;
 	}
@@ -472,6 +478,7 @@ figure h1 {
 		height: auto;
 		align-content: center;
 		width: 95%;
+		background-color: white;
 		border-left: 1px solid lightgray;
     	border-right: 1px solid lightgrey
 	}
@@ -506,11 +513,79 @@ figure h1 {
 
 	#about-paragraph{
 		border: none;
+		width: 95%;
+		background-color: white;
 	}
 
 	#main-about-img{
 		background-attachment: initial;
 		height: 200px
+	}
+
+	footer{
+		background-color: white;
+		width: 95%;
+		margin-left: 2.5%;
+		padding: 30px 0;
+	}
+
+
+
+	/*** Services ***/
+
+	#hero-services{
+		width: 95%;
+		background-color: white;
+		height: 500px;
+		padding-bottom: 20px
+	}
+
+	.services-hero-section {
+		width: 95%;
+	}
+
+	.services-header-img {
+		width: 430px;
+		height: 120px;
+	}
+
+	.services-hero-section p {
+		font-size: 16px;
+	}
+
+	#main-services{
+		width: 100%;
+	}
+
+	.services-articles {
+		width: 95%;
+		height: 300px;
+	}
+
+	.services-articles p {
+		line-height: 25px;
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+
+	.services-hero-section article{
+		width: 95%;
+	}
+
+	#end-services{
+		flex-direction: column-reverse;
+		background-color: white;
+		width: 95%;
+	}
+
+	#services-facts{
+		width: 95%;
+		padding-top: 35px;
+	}
+
+	#end-services figure{
+		width: 100%;
+		margin: 0;
 	}
 }
 
@@ -648,6 +723,7 @@ figure h1 {
 
 	.services-articles{
 		height: 250px;
+		width: 95%;
 	}
 
 	.services-info-img{
